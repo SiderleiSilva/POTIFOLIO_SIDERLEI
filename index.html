@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfólio Siderlei da Silva">
+    <meta name="author" content="Siderlei Silva">
+    <meta property="og:title" content="Siderlei da Silva">
+    <meta property="og:description" content="PORTFÓLIO">
+    <meta property="og:image" content=" https://portfoliosiderleisilva.netlify.app/ME.jpeg ">
+    <meta property="og:url" content=" https://portfoliosiderleisilva.netlify.app/ ">
+    <meta property="og:type" content="website">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="brazil">
+    <title>Siderlei da Silva - Desenhista/Projetista & Desenvolvedor Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos Gerais */
+        :root {
+            --primary: #1a3a5f;
+            --secondary: #2c5282;
+            --accent: #e63946;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--dark);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c1121f;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header e Navegação */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            padding: 5px 0;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 160px;
+            padding-bottom: 100px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .hero-buttons .btn {
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 8px solid white;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sobre Mim */
+        .about {
+            background-color: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .experience-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .highlight-box {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .highlight-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .highlight-box i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .highlight-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        /* Portfólio Web */
+        .portfolio {
+            background-color: #f8f9fa;
+        }
+
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .portfolio-content {
+            padding: 25px;
+        }
+
+        .portfolio-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .portfolio-content p {
+            color: var(--gray);
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background-color: #e9ecef;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--dark);
+        }
+
+        /* Experiência Profissional */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--primary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            width: 50%;
+            padding-right: 40px;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 50%;
+            padding-left: 40px;
+            padding-right: 0;
+        }
+
+        .timeline-content {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .timeline-content:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            transform: rotate(45deg);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content:before {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content:before {
+            left: -10px;
+        }
+
+        .timeline-date {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px var(--accent);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-dot {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-dot {
+            left: -10px;
+        }
+
+        /* Contato */
+        .contact {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact h2:after {
+            background-color: var(--accent);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-right: 15px;
+            width: 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d2840;
+            color: #adb5bd;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Responsividade */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 0;
+            }
+            
+            .timeline-item:nth-child(even) {
+                margin-left: 0;
+                padding-left: 70px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-dot,
+            .timeline-item:nth-child(even) .timeline-dot {
+                left: 20px;
+                right: auto;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content:before,
+            .timeline-item:nth-child(even) .timeline-content:before {
+                left: -10px;
+                right: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                background-color: var(--primary);
+                width: 250px;
+                height: calc(100vh - 70px);
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            }
+            
+            nav.active {
+                right: 0;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 30px;
+            }
+            
+            nav li {
+                margin: 0 0 20px 0;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                padding-top: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header e Navegação -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Siderlei &nbsp;<span>Silva</span></a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#portfolio">Portfólio Web</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Siderlei da <span class="highlight">Silva</span></h1>
+                <p class="subtitle">Desenhista/Projetista Sênior & Desenvolvedor Web</p>
+                <p>Profissional com mais de 22 anos de experiência em projetos de engenharia e desapropriação, combinados com expertise moderna em desenvolvimento web e design de aplicativos.</p>
+                <p>Especializado em criar soluções visuais eficientes tanto para projetos de infraestrutura quanto para presença digital.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn">Ver Portfólio Web</a>
+                    <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="ME.jpeg" alt="Siderlei da Silva" class="profile-img">
+               <!-- <div class="profile-img" style="background-color: #c3cfe2; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 5rem;">-->
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div>
+                    <p>Profissional com ampla experiência técnica em projetos de engenharia e desapropriação, atuando por mais de 10 anos no DER-RJ e 6 anos na Consen Engenharia. Paralelamente, desenvolvi habilidades em tecnologia da informação, atuando como professor e sócio na ERS Informática por 6 anos.</p>
+                    <p>Nos últimos anos, tenho me dedicado ao desenvolvimento web, criando sites, aplicativos e cartões de visita virtuais para diversos clientes e projetos pessoais. Esta combinação única de habilidades me permite entender tanto as necessidades técnicas de projetos complexos quanto as demandas de comunicação visual moderna.</p>
+                </div>
+                <div>
+                    <div class="experience-highlights">
+                        <div class="highlight-box">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h3>22+</h3>
+                            <p>Anos em Projetos de Engenharia</p>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-code"></i>
+                            <h3>20+</h3>
+                            <p>Projetos Web Desenvolvidos</p>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h3>6</h3>
+                            <p>Anos como Professor de TI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio Web -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Portfólio Web</h2>
+            <p class="section-subtitle" style="margin-bottom: 40px; font-size: 1.2rem;">Uma seleção dos sites e aplicativos que desenvolvi. Clique em qualquer imagem para visitar o projeto.</p>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="Cad">AutoCad</button>
+                <button class="filter-btn" data-filter="app">Aplicativos</button>
+                <button class="filter-btn" data-filter="site">Sites</button>
+                <button class="filter-btn" data-filter="card">Cartões Virtuais</button>
+                <button class="filter-btn" data-filter="Simulados">Simulados Concursos</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Projetos serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2>Experiência Profissional</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">10 Anos</span>
+                        <h3>DER-RJ (Arco Metropolitano)</h3>
+                        <p><strong>Cargo:</strong> Desenhista/Projetista</p>
+                        <p>Atuei em diversos projetos de desapropriação para obras de infraestrutura no Rio de Janeiro, incluindo o Arco Metropolitano, Via Light, COMPERJ e outros.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">6 Anos</span>
+                        <h3>Consen Engenharia</h3>
+                        <p><strong>Cargo:</strong> Desenhista/Projetista</p>
+                        <p>Atuação em consultoria patrimonial e serviços de engenharia, desenvolvendo projetos técnicos e laudos para clientes diversos.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">6 Anos</span>
+                        <h3>ERS Informática</h3>
+                        <p><strong>Cargo:</strong> Professor e Sócio</p>
+                        <p>Ministrei cursos de informática, manutenção de computadores, redes e cabeamento. Também atuei na gestão do negócio.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 60px;">
+                <h3>Principais Projetos de Engenharia</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
+                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                        <h4>Arco Metropolitano do RJ</h4>
+                        <p>Projeto de desapropriação para uma das maiores obras de infraestrutura do estado.</p>
+                    </div>
+                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                        <h4>Projeto Light - UTE Paracambi</h4>
+                        <p>Hidrelétrica, linha de transmissão e desapropriação com elaboração de laudos técnicos.</p>
+                    </div>
+                    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                        <h4>Vários Projetos de PCHs</h4>
+                        <p>Pequenas Centrais Hidrelétricas com desenvolvimento de projetos completos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Endereço</strong></p>
+                            <p>Rua Lino Teixeira, 206/201 - Jacaré, RJ</p>
+                            <p>CEP: 20970-007 - Rio de Janeiro/RJ</p>
+                        </div>
+                    </div>
+                    
+                   <div class="contact-item">
+    
+    <div>
+        <p><i class="fas fa-phone"></i><strong>Telefones</strong></p>
+        <p>
+            <a href="https://wa.me/5521980387955?text=Olá%20Siderlei,%20vim%20do%20seu%20portfólio!" 
+               target="_blank" 
+               style="color: #25D366; text-decoration: none; font-weight: bold;">
+                <i class="fab fa-whatsapp"></i> WhatsApp: (21) 98038-7955
+            </a>
+        </p>
+        <!--<p>Fixo: (21) 2201-3815 (Vilma Ribeiro)</p>-->
+    </div>
+</div>
+                    
+                    <!--<div class="contact-item">
+                        <i class="fas fa-id-card"></i>
+                        <div>
+                            <p><strong>Documentos</strong></p>
+                            <p>CPF: 018.511.977-88</p>
+                            <p>Identidade: 07911000-3 / I.F.P.</p>
+                        </div>
+                    </div>-->
+                </div>
+                
+               <div class="contact-form">
+    <h3><i class="fas fa-envelope"></i> Envie uma Mensagem</h3>
+    
+    <form id="contactFormAjax">
+        <!-- Campos do formulário -->
+        <div style="margin-bottom: 20px;">
+            <input type="text" id="nome" name="name" placeholder="Seu Nome" required 
+                   style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <input type="email" id="email" name="email" placeholder="Seu E-mail" required 
+                   style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;">
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <textarea id="mensagem" name="message" placeholder="Sua Mensagem" rows="5" required 
+                      style="width: 100%; padding: 12px; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;"></textarea>
+        </div>
+        
+        <!-- Mensagem de status -->
+        <div id="formStatus" style="margin: 15px 0; padding: 15px; border-radius: 6px; display: none;">
+            <div id="statusContent"></div>
+        </div>
+        
+        <button type="submit" class="btn" style="width: 100%; padding: 14px; font-size: 1.1rem;">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+        
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #666; text-align: center;">
+            <i class="fas fa-shield-alt"></i> Mensagem enviada diretamente para siderlei.silva2067@gmail.com
+        </p>
+    </form>
+</div>
+
+<script>
+// Envio via AJAX para Formspree
+document.getElementById('contactFormAjax').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const button = form.querySelector('button[type="submit"]');
+    const statusDiv = document.getElementById('formStatus');
+    const statusContent = document.getElementById('statusContent');
+    const originalButtonText = button.innerHTML;
+    
+    // Mostrar carregando
+    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    button.disabled = true;
+    
+    // Coletar dados
+    const formData = new FormData(form);
+    formData.append('_subject', 'Nova mensagem do Portfólio Siderlei Silva');
+    
+    try {
+        // Enviar para Formspree
+        const response = await fetch('https://formspree.io/f/mkogdrka', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        if (response.ok) {
+            // Sucesso
+            showStatus('success', 
+                '<i class="fas fa-check-circle"></i> <strong>Mensagem enviada com sucesso!</strong>',
+                'Obrigado pelo contato. Responderei em breve.'
+            );
+            
+            // Limpar formulário
+            form.reset();
+            
+            // Esconder mensagem após 8 segundos
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 8000);
+            
+        } else {
+            throw new Error('Erro no envio');
+        }
+        
+    } catch (error) {
+        // Erro - mostrar fallback
+        showStatus('error',
+            '<i class="fas fa-exclamation-circle"></i> <strong>Ocorreu um erro</strong>',
+            'Tente enviar diretamente para: <a href="mailto:siderlei.silva2067@gmail.com" style="color: inherit; text-decoration: underline;">siderlei.silva2067@gmail.com</a>'
+        );
+    } finally {
+        // Restaurar botão
+        button.innerHTML = originalButtonText;
+        button.disabled = false;
+    }
+});
+
+function showStatus(type, title, message) {
+    const statusDiv = document.getElementById('formStatus');
+    const statusContent = document.getElementById('statusContent');
+    
+    // Configurar estilo
+    if (type === 'success') {
+        statusDiv.style.backgroundColor = '#d4edda';
+        statusDiv.style.color = '#155724';
+        statusDiv.style.borderLeft = '4px solid #28a745';
+    } else {
+        statusDiv.style.backgroundColor = '#f8d7da';
+        statusDiv.style.color = '#721c24';
+        statusDiv.style.borderLeft = '4px solid #dc3545';
+    }
+    
+    // Definir conteúdo
+    statusContent.innerHTML = `
+        <div style="font-size: 1rem; margin-bottom: 5px;">${title}</div>
+        <div style="font-size: 0.9rem;">${message}</div>
+    `;
+    
+    // Mostrar
+    statusDiv.style.display = 'block';
+    
+    // Rolar para a mensagem
+    statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+       <div class="social-links">
+    <!--<a href="https://www.linkedin.com/in/seu-perfil" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>-->
+    <a href="https://github.com/SiderleiSilva" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.facebook.com/share/16i4jrZiqR/" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/peixovsky?igsh=NmRhbXAyNWg0bGth" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <!--<a href="https://www.youtube.com/@seu-canal" target="_blank" title="YouTube">
+        <i class="fab fa-youtube"></i>
+    </a>-->
+</div>
+            <p>&copy; <span id="currentYear"></span> Siderlei da Silva. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">Desenvolvido com HTML, CSS e JavaScript</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dados dos projetos web
+        const portfolioItems = [
+            // 01 CAD
+         {
+                category: "Cad",
+                title: "Ferramentas AutoCad",
+                description: "Ferramentas para integração e geração de Memorial Descritivo.",
+                image: "MEMORIAL DESCRITIVO2.png",
+                link: "https://geradormemorialdescritivocadport.netlify.app/",
+                tags: ["AutoCad", "Ferramenta", "Georreferenciamento", "UTM"]
+            },
+            // 02 CAD
+            {
+                category: "Cad",
+                title: "Ferramentas AutoCad",
+                description: "Ferramentas para integração e geração de Tabela de Coordenadas, Azimutes e distâncias.",
+                image: "GERADOR DE TABELA2.png",
+                link: "https://geradortabelaautocadport.netlify.app/",
+                tags: ["AutoCad", "Ferramenta", "Georreferenciamento", "UTM"]
+            },
+            // 03 CAD
+             {
+                category: "Cad",
+                title: "Ferramentas AutoCad",
+                description: "Ferramentas para integração e geração de Arquivo KMZ para Google Earth.",
+                image: "GERADOR KMZ2.png",
+                link: "https://geradortabelaautocadport.netlify.app/",
+                tags: ["AutoCad", "Ferramenta", "Georreferenciamento", "UTM"]
+            },
+            // 04 CAD
+            {
+                category: "Cad",
+                title: "Coordenadas UTM e Geográfica",
+                description: "Ferramenta para conversão de coordenadas UTM e geográficas para profissionais de georreferenciamento.",
+                image: "CONVERSOR UTM.png",
+                link: "https://utmgeo.netlify.app/",
+                tags: ["AutoCad", "Ferramenta", "Georreferenciamento", "UTM"]
+            },
+            // 05 CAD
+            {
+                category: "Cad",
+                title: "Conversor de Rumo e Azimute",
+                description: "Ferramenta para conversão de Rumo e Azimute.",
+                image: "RUMO E AZIMUTE.png",
+                link: "https://azimuterumo.netlify.app/",
+                tags: ["AutoCad", "Ferramenta", "Georreferenciamento", "UTM"]
+            },
+            // 06 APP LOJA VIRTUAL
+            {
+                category: "app",
+                title: "Sua Loja Virtual",
+                description: "Aplicativo completo para e-commerce com carrinho de compras e integração de pagamentos.",
+                image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                link: "https://sualojaseuapp.netlify.app",
+                tags: ["E-commerce", "Catálogo", "Agendamento"]
+            },
+             // 07 APP DEPÓSITO
+            {
+                category: "app",
+                title: "Depósito de Bebidas",
+                description: "Aplicativo completo para e-commerce com carrinho de compras e integração de pagamentos.",
+                image: "DEP.png",
+                link: "https://depaltashoras.netlify.app/",
+                tags: ["E-commerce", "Catálogo", "Entregas"]
+            },
+            
+            // 08 ÓTICA
+            {
+                category: "app",
+                title: "Óticas.com",
+                description: "Aplicativo para óticas com catálogo de produtos, agendamento de consultas e informações de contato.",
+                image: "ÓTICA.png",
+                link: "https://oticacom.netlify.app/",
+                tags: ["Saúde", "Catálogo", "Agendamento"]
+            },
+            // 09 APP PIZZARIA CASA DO CHEF
+            {
+                category: "app",
+                title: "Casa do Chef Pizzaria",
+                description: "Aplicativo para pizzaria com cardápio digital, pedidos online e sistema de delivery.",
+                image: "APP CASA DO CHEF.png",
+                link: "https://cchef.netlify.app/",
+                tags: ["Food", "Delivery", "Cardápio"]
+            },
+             // 09 APP B3
+            {
+                category: "app",
+                title: "Aplicativo Calculadora B3",
+                description: "Aplicativo para cálculos na B3 Mini-Índice e Mini-Dólar.",
+                image: "B3.png",
+                link: "https://b3calculadora.netlify.app/",
+                tags: ["Aplicativo", "Java Script", "Responsivo"]
+            },
+            // 10 LISTFY
+            {
+                category: "app",
+                title: "ListFy Aplicativo com Imagens",
+                description: "Aplicativo de lista de compromisso, compras...",
+                image: "LISTFY IMAGENS.png",
+                link: "https://listfyimage.netlify.app/",
+                tags: ["Aplicativo", "Java Script", "Responsivo"]
+            },
+              // 11 LISTFY VOICE
+            {
+                category: "app",
+                title: "ListFy Aplicativo com comando de Voz",
+                description: "Aplicativo de lista de compromisso, compras...",
+                image: "LISTFY VOICE.png",
+                link: "https://listfyfifi.netlify.app/",
+                tags: ["Aplicativo", "Java Script", "Responsivo"]
+            },
+            {
+                category: "site",
+                title: "Eplay Mobilidade Urbana",
+                description: "Site institucional para empresa de mobilidade urbana com informações sobre serviços e contato.",
+                image: "E-PLAY2.png",
+                link: "https://eplaymu.netlify.app/",
+                tags: ["Mobilidade", "Institucional", "Bootstrap"]
+            },
+            {
+                category: "site",
+                title: "Consen Engenharia",
+                description: "Site profissional para empresa de consultoria em engenharia, apresentando serviços e portfolio.",
+                image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                link: "https://mcconsultoria.netlify.app",
+                tags: ["Engenharia", "Consultoria", "Profissional"]
+            },
+            {
+                category: "card",
+                title: "Rafael Cavalcante - Personal Bank",
+                description: "Cartão de visita virtual para profissional do setor bancário com links para contato e redes sociais.",
+                image: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                link: "https://rcalvacantepersonalbank.netlify.app/",
+                tags: ["Cartão Virtual", "Financeiro", "Contato"]
+            },
+            {
+                category: "card",
+                title: "Carlos Junior - Artista Fotógrafo",
+                description: "Portfólio online para fotógrafo profissional com galeria de trabalhos e informações de contato.",
+                image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                link: "https://cjuniorartistafotografico.netlify.app/",
+                tags: ["Fotografia", "Portfólio", "Arte"]
+            },
+            
+            {
+                category: "site",
+                title: "Casa do Chef Pizzaria",
+                description: "Aplicativo para pizzaria com cardápio digital, pedidos online e sistema de delivery.",
+                image: "CASA DO CHEF.png",
+                link: "https://casadochefpizzaria.netlify.app/",
+                tags: ["Food", "Delivery", "Cardápio"]
+            },
+            // Simulados Concursos
+            {
+                category: "Simulados",
+                title: "Simulados Concursos Questões",
+                description: "Simulados para concursos com tempo de prova.",
+                image: "SIMULADO 1.png",
+                link: "https://simuladosportfolio.netlify.app/",
+                tags: ["Interativo", "Respostas", "Responsivo"]
+            },
+             // Simulados Concursos
+            {
+                category: "Simulados",
+                title: "Simulados Concursos Matéria",
+                description: "Simulados de estudo para concursos com leitor de texto.",
+                image: "SIMULADO 2.png",
+                link: "https://simuladosportfolio2.netlify.app/",
+                tags: ["Interativo", "Textos", "Responsivo"]
+            }
+        ];
+
+        // Menu responsivo
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        // Fechar menu ao clicar em um link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+            });
+        });
+
+        // Filtrar portfólio
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const portfolioGrid = document.querySelector('.portfolio-grid');
+
+        function renderPortfolio(filter = 'all') {
+            portfolioGrid.innerHTML = '';
+            
+            const filteredItems = filter === 'all' 
+                ? portfolioItems 
+                : portfolioItems.filter(item => item.category === filter);
+            
+            filteredItems.forEach(item => {
+                const portfolioItem = document.createElement('div');
+                portfolioItem.className = 'portfolio-item';
+                portfolioItem.setAttribute('data-category', item.category);
+                
+                portfolioItem.innerHTML = `
+                    <a href="${item.link}" target="_blank">
+                        <img src="${item.image}" alt="${item.title}" class="portfolio-img">
+                    </a>
+                    <div class="portfolio-content">
+                        <h3>${item.title}</h3>
+                        <p>${item.description}</p>
+                        <div class="portfolio-tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <a href="${item.link}" target="_blank" class="btn">Visitar Site</a>
+                    </div>
+                `;
+                
+                portfolioGrid.appendChild(portfolioItem);
+            });
+        }
+
+        // Inicializar portfólio
+        renderPortfolio();
+
+        // Adicionar eventos aos botões de filtro
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remover classe active de todos os botões
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Adicionar classe active ao botão clicado
+                button.classList.add('active');
+                // Filtrar portfólio
+                const filter = button.getAttribute('data-filter');
+                renderPortfolio(filter);
+            });
+        });
+
+        // Atualizar ano no footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Formulário de contato
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pela mensagem! Entrarei em contato em breve.');
+            contactForm.reset();
+        });
+
+        // Smooth scroll para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
